@@ -510,7 +510,7 @@ var
         case iOperator of
           coLISTELEM2:
             begin
-              Result := VarArrayCreate ([0, 50], VarVariant); // Create VarArray for ListElements Values
+              Result := VarArrayCreate ([0, 1000], VarVariant); // Create VarArray for ListElements Values
               pArg1 := pfdStart;
               Inc(pArg1, CANEXPRSIZE + PWord(@pfd[0])^);
 
